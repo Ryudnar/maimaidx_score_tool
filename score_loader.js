@@ -142,13 +142,3 @@ let resultString = '';
 getAllDatas().then(() => copyStringToClipboard(resultString))
         .then(() => alert('성공적으로 취득하였습니다.'))
         .catch(() => alert('데이터 취득에 실패했습니다. 다시 시도해주세요.'));
-
-
-
-
-// function convertSongObjectToString(obj, difficulty) {
-//     if (!obj.rating) {
-//         return null;
-//     }
-//     return obj.name + '\t' + obj.type + '\t' + difficulty + '\t' + obj.level + '\t' + obj.rating + '\t' + obj.rank + '\t' + (obj.comboRank || '') + '\t' + (obj.sync || '');
-// }
